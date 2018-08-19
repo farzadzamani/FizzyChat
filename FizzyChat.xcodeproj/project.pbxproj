@@ -12,9 +12,14 @@
 		CB760A5D212958AC00794A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB760A5B212958AC00794A92 /* Main.storyboard */; };
 		CB760A5F212958AC00794A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB760A5E212958AC00794A92 /* Assets.xcassets */; };
 		CB760A62212958AC00794A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB760A60212958AC00794A92 /* LaunchScreen.storyboard */; };
+		CB760A6A21295F2800794A92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB760A6921295F2800794A92 /* GoogleService-Info.plist */; };
+		CB760A6D2129609400794A92 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB760A6C2129609400794A92 /* FirebaseCore.framework */; };
+		E141E78425A4AC6AA5BB196D /* Pods_FizzyChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB15753DAEEEFABE754B6C9C /* Pods_FizzyChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB15753DAEEEFABE754B6C9C /* Pods_FizzyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FizzyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B653A91E00A54BF981A73439 /* Pods-FizzyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzyChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FizzyChat/Pods-FizzyChat.debug.xcconfig"; sourceTree = "<group>"; };
 		CB760A54212958AC00794A92 /* FizzyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB760A57212958AC00794A92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB760A59212958AC00794A92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,10 @@
 		CB760A5E212958AC00794A92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB760A61212958AC00794A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB760A63212958AC00794A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB760A6921295F2800794A92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB760A6B2129601500794A92 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		CB760A6C2129609400794A92 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C9BC4978FDC3C6404A9F7 /* Pods-FizzyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzyChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FizzyChat/Pods-FizzyChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +38,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB760A6D2129609400794A92 /* FirebaseCore.framework in Frameworks */,
+				E141E78425A4AC6AA5BB196D /* Pods_FizzyChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F4133FE395F2AEEA9543C18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB760A6C2129609400794A92 /* FirebaseCore.framework */,
+				AB15753DAEEEFABE754B6C9C /* Pods_FizzyChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB760A4B212958AC00794A92 = {
 			isa = PBXGroup;
 			children = (
 				CB760A56212958AC00794A92 /* FizzyChat */,
 				CB760A55212958AC00794A92 /* Products */,
+				F83548D33A89B3D8389B686A /* Pods */,
+				9F4133FE395F2AEEA9543C18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +77,24 @@
 			isa = PBXGroup;
 			children = (
 				CB760A57212958AC00794A92 /* AppDelegate.swift */,
+				CB760A6921295F2800794A92 /* GoogleService-Info.plist */,
 				CB760A59212958AC00794A92 /* ViewController.swift */,
 				CB760A5B212958AC00794A92 /* Main.storyboard */,
 				CB760A5E212958AC00794A92 /* Assets.xcassets */,
 				CB760A60212958AC00794A92 /* LaunchScreen.storyboard */,
 				CB760A63212958AC00794A92 /* Info.plist */,
+				CB760A6B2129601500794A92 /* Bridge.h */,
 			);
 			path = FizzyChat;
+			sourceTree = "<group>";
+		};
+		F83548D33A89B3D8389B686A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B653A91E00A54BF981A73439 /* Pods-FizzyChat.debug.xcconfig */,
+				CE0C9BC4978FDC3C6404A9F7 /* Pods-FizzyChat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB760A66212958AC00794A92 /* Build configuration list for PBXNativeTarget "FizzyChat" */;
 			buildPhases = (
+				76717F245E11004C4885D630 /* [CP] Check Pods Manifest.lock */,
 				CB760A50212958AC00794A92 /* Sources */,
 				CB760A51212958AC00794A92 /* Frameworks */,
 				CB760A52212958AC00794A92 /* Resources */,
+				10F5E113408B67D2F49032CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +158,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB760A62212958AC00794A92 /* LaunchScreen.storyboard in Resources */,
+				CB760A6A21295F2800794A92 /* GoogleService-Info.plist in Resources */,
 				CB760A5F212958AC00794A92 /* Assets.xcassets in Resources */,
 				CB760A5D212958AC00794A92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10F5E113408B67D2F49032CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FizzyChat/Pods-FizzyChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FizzyChat/Pods-FizzyChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76717F245E11004C4885D630 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FizzyChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB760A50212958AC00794A92 /* Sources */ = {
@@ -278,6 +355,7 @@
 		};
 		CB760A67212958AC00794A92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B653A91E00A54BF981A73439 /* Pods-FizzyChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +374,7 @@
 		};
 		CB760A68212958AC00794A92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE0C9BC4978FDC3C6404A9F7 /* Pods-FizzyChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
